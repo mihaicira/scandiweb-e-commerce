@@ -1,0 +1,213 @@
+/*MUTUAL COMPONENTS CSS*/
+
+
+/*Navbar*/
+.navbar>*,.navbar{
+    z-index: 10;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    background: white;
+    height: 8vh;
+
+    width: 90%;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+
+#navbar-logo{
+    cursor: pointer;
+}
+
+.navbar-child{
+    width: auto;
+
+
+    height: 100%;
+    display: flex
+}
+.navbar-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-child>button{
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+#navbar-active{
+    border-bottom: 2px solid #5ECE7B;
+    color: #5ECE7B;
+    font-weight: 600;
+}
+
+#navbar-actions{
+    position: relative;
+}
+
+#navbar-action-money{
+    font-weight: 600;
+    width: 150%;
+}
+
+#navbar-action-dropdown{
+    position: absolute;
+    width: 150%;
+    transform: translateY(75%) translateX(-34%) rotateX(90deg);
+    transform-origin: top;
+    background: white;
+
+    transition: 800ms;
+    -o-transition: 800ms;
+    -moz-transition: 800ms;
+    -webkit-transition: 800ms;
+}
+
+#navbar-action-dropdown>button{
+
+    padding: 10% 0 10% 0;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+
+    transition: 500ms;
+    -o-transition: 500ms;
+    -moz-transition: 500ms;
+    -webkit-transition: 500ms;
+}
+#navbar-action-dropdown>button:hover{
+    background: lightgrey;
+}
+
+#navbar-action-cart{
+    transition: 500ms;
+    -o-transition: 500ms;
+    -moz-transition: 500ms;
+    -webkit-transition: 500ms;
+}
+
+#navbar-action-cart:hover{
+    transform: scale(.8);
+}
+
+#navbar-cart-dropdown{
+    padding: 1vh;
+    position: absolute;
+    background: white;
+    transform: translateX(-80%) translateY(55%) rotateX(90deg);
+    transform-origin: top;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    transition: 800ms;
+    -o-transition: 800ms;
+    -moz-transition: 800ms;
+    -webkit-transition: 800ms;
+}
+
+.navbar-cart-product-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar-cart-product-container>*:nth-of-type(1){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-cart-product-right>p{
+    font-family: Raleway;
+    font-size: .9rem;
+    margin: 10px 0 10px 0;
+}
+.navbar-cart-product-right-buttons>button{
+     width: 4vh;
+     height: 4vh;
+     background: white;
+     color: black;
+     border: 1px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+.navbar-cart-product-right-buttons>button:disabled{
+    background: lightgrey;
+}
+
+
+
+
+
+
+
+.navbar-cart-product-container>*:nth-of-type(2){
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: Raleway;
+    font-size: 1rem;
+    align-items: center;
+}
+
+
+
+
+.navbar-cart-product-container>*:nth-of-type(3){
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-cart-product-container>*:nth-of-type(3)>img{
+    width: 100%;
+}
+.navbar-cart-product-right-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.navbar-cart-total{
+    display: flex;
+    font-family: Roboto;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 3vh;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.navbar-cart-dropdown-final-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-cart-dropdown-final-buttons>button{
+    padding: 5px 15px 5px 15px;
+    font-family: Raleway;
+    font-weight: 600;
+}
+.navbar-cart-dropdown-final-buttons>button:nth-of-type(1){
+    width: 45%;
+    background: white;
+    color: black;
+    outline: 1px solid black;
+}
+.navbar-cart-dropdown-final-buttons>button:nth-of-type(2){
+    width: 45%;
+    background: #5ECE7B;
+    color: white;
+}
+/*Navbar*/

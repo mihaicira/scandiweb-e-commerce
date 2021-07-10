@@ -1,0 +1,190 @@
+#page-product{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.product-gallery-container{
+    width: 120vh;
+    height: 65vh;
+
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.side-gallery {
+    width: 13%;
+
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+
+    overflow-y: scroll;
+}
+
+
+.side-gallery::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.side-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.side-gallery::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.side-gallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.side-gallery>img{
+    width: 100%;
+}
+
+.main-gallery{
+    width: 85%;
+    text-align: center;
+}
+
+.main-gallery>img{
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+.product-options-container{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vh;
+}
+
+.product-name,
+.product-name>h2,
+.product-name>h3{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.product-name>h3{
+    margin-top: 5px;
+    font-weight: 400;
+    font-family: "Raleway";
+    font-size: 1.5rem;
+}
+.product-name>h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: "Raleway";
+}
+
+.size-container,.price-container{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+.size-boxes{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.size-boxes>button{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vh;
+    height: 5vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.size-boxes>button:hover:not(.selected){
+    border: 1px solid black;
+    background: rgb(240,240,240);
+}
+.size-boxes>button:focus:not(.selected),
+.size-boxes>button:active:not(.selected){
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
+
+
+
+.size-boxes>button:disabled,
+.size-boxes>button[disabled]{
+    color: lightgrey;
+    border-color: lightgrey;
+}
+.size-boxes>button:disabled:hover{
+    outline: none;
+    border: 1px solid lightgrey;
+}
+
+.selected{
+    color: white;
+    background: black;
+}
+.selected:focus,
+.selected:active{
+    background: black;
+    color: white;
+}
+
+.price-container>p{
+    font-family: "Raleway";
+    padding: 0;
+    margin: 5px 0 0 0;
+    font-size: 1.4rem;
+}
+
+.addToCartBtn>button{
+    width: 100%;
+    background: #5ECE7B;
+    color: white;
+
+    padding: 2vh 0 2vh 0;
+
+    font-family: "Raleway";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    transition: 200ms;
+    -o-transition: 200ms;
+    -moz-transition: 200ms;
+    -webkit-transition: 200ms;
+}
+
+.addToCartBtn>button:hover{
+    background: #c8f6c8;
+}
+
+.description-container *{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+}
